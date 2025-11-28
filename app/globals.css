@@ -1,0 +1,130 @@
+@import "tailwindcss";
+@reference "tailwindcss/utilities";
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --foreground-rgb: 248, 250, 252; /* slate-50 */
+  --background-start-rgb: 2, 6, 23; /* slate-950 */
+  --background-end-rgb: 15, 23, 42; /* slate-900 */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 248, 250, 252;
+    --background-start-rgb: 2, 6, 23;
+    --background-end-rgb: 15, 23, 42;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: radial-gradient(circle at top, rgba(16, 185, 129, 0.16), transparent 55%),
+    radial-gradient(circle at bottom, rgba(8, 47, 73, 0.5), rgb(var(--background-end-rgb)));
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Custom button styles */
+.btn-primary {
+  @apply bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105;
+}
+
+.btn-outline {
+  @apply border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white font-medium py-2 px-6 rounded-full transition-all duration-300;
+}
+
+/* Section container */
+.section-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+}
+
+/* Card styles */
+.card {
+  @apply bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl;
+}
+
+/* Hero section */
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(5, 150, 105, 0.9) 0%, rgba(16, 185, 129, 0.8) 100%);
+}
+
+/* Feature grid */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Testimonial card */
+.testimonial-card {
+  @apply bg-white p-6 rounded-xl shadow-md relative;
+}
+
+.testimonial-card::before {
+  content: '"';
+  @apply absolute -top-4 -left-4 text-6xl text-emerald-100 font-serif;
+}
+
+/* Form styles */
+.form-input {
+  @apply w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-emerald-500 focus:border-transparent outline-none transition-all duration-300;
+}
+
+/* Custom animation for floating elements */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Responsive typography */
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-teal-600;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center;
+  }
+  
+  .section-subtitle {
+    @apply text-lg md:text-xl text-gray-600 dark:text-gray-300 text-center max-w-3xl mx-auto mb-12;
+  }
+}
