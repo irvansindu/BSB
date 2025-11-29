@@ -76,7 +76,7 @@ const NarayaPage = () => {
               </div>
               <div className="mt-5 grid gap-3">
                 <Link
-                  href="/booking?cluster=naraya"
+                  href="/contact?cluster=naraya"
                   className="inline-flex items-center justify-center rounded-full bg-emerald-400 px-5 py-2.5 text-sm font-semibold text-slate-950 shadow-lg shadow-emerald-500/40 hover:bg-emerald-300 transition-colors"
                 >
                   Jadwalkan Kunjungan

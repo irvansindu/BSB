@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Metadata } from 'next';
-import { ArrowLeft, MapPin, Home, Ruler, Trees, ShieldCheck, Building2 } from 'lucide-react';
+import { ArrowLeft, Building2 } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Hilago Cluster - BSB City',
-  description: 'Hilago, where luxury meets nature: hunian di perbukitan BSB City dengan Hilago Park dan jogging track mengelilingi danau yang menenangkan.',
+  description:
+    'Hilago, where luxury meets nature: kawasan hunian di perbukitan BSB City dengan Hilago Park dan jogging track mengelilingi danau.',
 };
 
 const HilagoPage = () => {
@@ -32,108 +33,28 @@ const HilagoPage = () => {
                   priority
                 />
               </div>
-              <div className="relative p-6 md:p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+              <div className="relative p-6 md:p-8 flex flex-col gap-6">
                 <div>
                   <p className="text-xs uppercase tracking-[0.25em] text-emerald-300/80 mb-2">Where Luxury Meets Nature</p>
                   <h1 className="text-3xl md:text-4xl font-semibold tracking-tight text-slate-50 mb-3">Hilago Cluster</h1>
                   <p className="text-sm md:text-base text-slate-200 max-w-xl">
-                    Hilago bukan hanya tempat untuk tinggal, tetapi juga tempat untuk menikmati hidup yang tenang dan rileks.
-                    Di dalamnya terdapat Hilago Park dengan jogging track yang mengelilingi danau yang indah, menghadirkan suasana resort di tengah kota baru BSB City.
+                    Hilago dikenal dengan Hilago Park di dalam kawasan, yang menyediakan jogging track mengelilingi danau. Konsep ini
+                    menghadirkan suasana menyatu dengan alam di tengah pengembangan kota baru BSB City.
                   </p>
-                </div>
-                <div className="shrink-0">
-                  <div className="rounded-2xl border border-emerald-400/40 bg-slate-900/70 px-6 py-4 shadow-[0_0_35px_rgba(16,185,129,0.35)]">
-                    <p className="text-xs uppercase tracking-[0.25em] text-emerald-300 mb-1">Mulai dari</p>
-                    <p className="text-2xl font-semibold text-emerald-200">Rp600 Juta-an</p>
-                    <p className="mt-1 text-xs text-slate-300">Cicilan fleksibel, tenor hingga 20 tahun</p>
-                  </div>
                 </div>
               </div>
             </div>
 
             <div className="grid gap-8 md:grid-cols-2">
               <section>
-                <h2 className="text-lg font-semibold tracking-tight text-slate-50 mb-3">Konsep Hunian</h2>
+                <h2 className="text-lg font-semibold tracking-tight text-slate-50 mb-3">Sekilas Hilago Cluster</h2>
                 <p className="text-sm leading-relaxed text-slate-200/90 mb-4">
-                  Mengusung konsep where luxury meets nature, Hilago memadukan arsitektur modern minimalis dengan sentuhan alam.
-                  Fasad clean, bukaan jendela lebar, dan pemandangan hijau di sekitar kawasan menciptakan suasana tinggal yang tenang namun tetap modern.
+                  Informasi mengenai Hilago pada situs resmi BSB City menekankan konsep where luxury meets nature dengan keberadaan
+                  Hilago Park dan jogging track di sekitar danau. Untuk detail produk dan fasilitas lainnya, harap mengacu pada informasi
+                  resmi pengembang atau marketing gallery BSB City.
                 </p>
-                <p className="text-sm leading-relaxed text-slate-200/90">
-                  Kehadiran Hilago Park dengan jogging track mengelilingi danau menambah kualitas hidup penghuni, menjadi ruang rekreasi harian yang mudah dijangkau hanya dengan beberapa langkah dari rumah.
-                </p>
-              </section>
-
-              <section className="rounded-2xl border border-emerald-500/20 bg-slate-900/70 p-6">
-                <h2 className="text-lg font-semibold tracking-tight text-slate-50 mb-4">Highlight Cluster</h2>
-                <dl className="space-y-3 text-sm">
-                  <div className="flex items-center gap-3">
-                    <MapPin className="h-4 w-4 text-emerald-300" />
-                    <div>
-                      <dt className="text-slate-300">Lokasi</dt>
-                      <dd className="text-slate-100">Zona premium BSB City, dekat kawasan komersial utama</dd>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Home className="h-4 w-4 text-emerald-300" />
-                    <div>
-                      <dt className="text-slate-300">Tipe Unit</dt>
-                      <dd className="text-slate-100">Type 36/72, 45/90, dan 60/120</dd>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Ruler className="h-4 w-4 text-emerald-300" />
-                    <div>
-                      <dt className="text-slate-300">Ketinggian</dt>
-                      <dd className="text-slate-100">± 200 mdpl dengan udara sejuk sepanjang tahun</dd>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Trees className="h-4 w-4 text-emerald-300" />
-                    <div>
-                      <dt className="text-slate-300">Ruang Terbuka Hijau</dt>
-                      <dd className="text-slate-100">Taman tematik, jalur pedestrian rindang, kids playground</dd>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <ShieldCheck className="h-4 w-4 text-emerald-300" />
-                    <div>
-                      <dt className="text-slate-300">Keamanan</dt>
-                      <dd className="text-slate-100">One gate system, CCTV, dan security 24 jam</dd>
-                    </div>
-                  </div>
-                </dl>
               </section>
             </div>
-
-            <section className="mt-10 rounded-2xl border border-emerald-500/20 bg-slate-900/70 p-6 md:p-8">
-              <h2 className="text-lg font-semibold tracking-tight text-slate-50 mb-5">Fasilitas Kawasan</h2>
-              <div className="grid gap-4 md:grid-cols-3 text-sm">
-                <div className="space-y-2">
-                  <p className="font-medium text-slate-100">Lifestyle & Rekreasi</p>
-                  <ul className="space-y-1 text-slate-200/90">
-                    <li>• Club house eksklusif</li>
-                    <li>• Kolam renang dewasa & anak</li>
-                    <li>• Jogging track dan bicycle lane</li>
-                  </ul>
-                </div>
-                <div className="space-y-2">
-                  <p className="font-medium text-slate-100">Kenyamanan Harian</p>
-                  <ul className="space-y-1 text-slate-200/90">
-                    <li>• Area drop-off elegan</li>
-                    <li>• Parkir tamu terpusat</li>
-                    <li>• Street lighting modern</li>
-                  </ul>
-                </div>
-                <div className="space-y-2">
-                  <p className="font-medium text-slate-100">Akses & Sekitar</p>
-                  <ul className="space-y-1 text-slate-200/90">
-                    <li>• Dekat kawasan komersial BSB</li>
-                    <li>• Akses cepat ke sekolah & kampus</li>
-                    <li>•  ±20 menit ke pusat kota</li>
-                  </ul>
-                </div>
-              </div>
-            </section>
           </div>
 
           <aside className="space-y-6 lg:sticky lg:top-28">
@@ -156,7 +77,7 @@ const HilagoPage = () => {
               </div>
               <div className="mt-5 grid gap-3">
                 <Link
-                  href="/booking?cluster=hilago"
+                  href="/contact?cluster=hilago"
                   className="inline-flex items-center justify-center rounded-full bg-emerald-400 px-5 py-2.5 text-sm font-semibold text-slate-950 shadow-lg shadow-emerald-500/40 hover:bg-emerald-300 transition-colors"
                 >
                   Jadwalkan Kunjungan

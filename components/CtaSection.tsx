@@ -49,7 +49,7 @@ const CtaSection = () => {
             viewport={{ once: true }}
             className="flex flex-col sm:flex-row justify-center gap-4 mb-16"
           >
-            <Link href="/booking" className="w-full sm:w-auto">
+            <Link href="/contact?source=cta-visit" className="w-full sm:w-auto">
               <Button className="w-full sm:w-auto bg-white text-emerald-700 hover:bg-emerald-50 h-14 px-8 text-lg font-medium">
                 <Calendar className="mr-2 h-5 w-5" />
                 Jadwalkan Kunjungan

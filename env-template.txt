@@ -1,0 +1,12 @@
+# Template untuk .env.local
+# Copy isi ini ke file .env.local di folder bsb-city
+# Ganti placeholder dengan nilai asli kamu
+
+# API key dari Resend (ambil dari dashboard Resend)
+RESEND_API_KEY=ganti_dengan_api_key_resend_kamu
+
+# Email tujuan yang menerima pesan dari form contact
+CONTACT_TO_EMAIL=marketing@bsbcity.com
+
+# (Opsional) Alamat pengirim yang muncul di email
+CONTACT_FROM_EMAIL=no-reply@bsbcity.com
